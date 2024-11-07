@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription</title>
+    <link rel="icon" href="img/Logo_RougeEtOr.ico">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">Rouge et Or</div>
+        <nav class="navbar">
+            <a href="../frontend/index.html">Retour à l'Accueil</a>
+        </nav>
+    </header>
+    <section class="hero">
+        <h1>Connexion</h1>
+        <form id="login-form" action="/api/login">
+            <label for="lname">Courriel:</label><br>
+            <input type="text" id="email" name="email" placeholder="john.doe.69420@ulaval.ca" type="email"><br>
+            <label for="lname">Mot de passe:</label><br>
+            <input id="passwd" name="passwd" placeholder="mot de passe" type="password"><br>
+            <br>
+          </form>
+          <button href="#" id="btn" class="cta-button">Connexion</button>
+    </section>
+
+    <script>
+        document.getElementById("btn").onclick = () => {
+            let formData = JSON.stringify($("#login-form").serializeArray());
+
+            $.ajax({
+            type: "POST",
+            url: "/api/login",
+            data: formData,
+            success: () => {
+                // je sais pas quoi faire apres la connexion on retourne a l'accueil comme si de rien etait??
+                window.location.href = "/";
+            },
+            dataType: "json",
+            contentType : "application/json"
+            });
+        }
+    </script>
+</body>
+</html>

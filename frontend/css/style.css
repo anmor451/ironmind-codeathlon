@@ -86,3 +86,16 @@ body {
     bottom: 0;
     width: 100%;
 }
+
+.billets{
+    display: flex;
+}
+
+.label-events{
+    color: red;
+}
+
+.div-events{
+    display: flex;
+    justify-content: center;
+}

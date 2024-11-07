@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Réservation de billets - Rouge et Or</title>
+
+    <link rel="icon" href="img/Logo_RougeEtOr.ico">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/script.js" defer></script>
+</head>
+
+<style>
+    .shake {
+        animation: shake 0.5s;
+        animation-iteration-count: infinite;
+    }
+
+    @keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+    }
+</style>
+
+<body style="background-image: url(../frontend/img/LAMascotte.jpg);">
+    <header class="header">
+        <div class="logo">Rouge et Or</div>
+        <nav class="navbar">
+            <a href="../frontend/index.html">Retour à l'Accueil</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h2>Notre mascotte</h2>
+        <img class="shake" src="../frontend/img/mascottevictor2015.jpg" alt="mascotte">
+        <img class="shake" src="../frontend/img/LAMascotte.jpg" alt="mascotte">
+        <p>Mascotte génialissime (sigma) du nom de victor</p>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2024 Université Laval - Tous droits réservés</p>
+    </footer>
+</body>
+</html>

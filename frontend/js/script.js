@@ -1,5 +1,12 @@
 $('#ul-buy-tickets-btn').click(function () {
-    alert('Le bouton fonctionne')
+    console.log("Bouton appuyé")
+    fetch('/api/buy')
+    .then(function(){
+        alert("Félicitation, vous avez acheté un billet")
+    })
+    .catch(function(){
+        console.log("Erreur, mais bouton fonctionne")
+    })
 });
 
 $(document).ready(function () {

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" href="img/Logo_RougeEtOr.ico">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/events.js" defer></script>
+    
+</head>
+<body onload="chargerBillet">
+    <header class="header">
+        <div class="logo">Rouge et Or</div>
+        <nav class="navbar">
+            <a href="../frontend/index.html">Retour à l'Accueil</a>
+        </nav>
+    </header>
+    <div id="div-events" class="div-events">
+        <label class="label-events">Voici les Événements à venir</label>
+    </div>
+    <!-- faire un fetch avec des events de la db j'ai aucune idee a quoi les routes vont ressembler -->
+     <div id="billet" class="billets">
+        <div id="inner-billet" style="color:aliceblue">
+            <label id="event-name">Nom de l'événement
+            </label>
+        </div>
+     </div>
+</body>
+</html>
